@@ -1,5 +1,6 @@
 {
   "name": "burger",
+  "homepage": "https://kirillApatski.github.io/Burger",
   "version": "0.1.0",
   "private": true,
   "scripts": {
