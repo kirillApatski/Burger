@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC} from 'react';
 import Head from "next/head";
 
 type ResponseType = {
@@ -13,7 +13,7 @@ type PropsType = {
 }
 
 
-const Reviews: FC<PropsType> = (props) => {
+const Reviews: FC<PropsType> = ({reviews}) => {
     return (
         <>
             <Head>
@@ -22,7 +22,7 @@ const Reviews: FC<PropsType> = (props) => {
             <div>
                 <h1>Отзывы</h1>
                 <div className='reviews'>
-                    {!!props.reviews.length && props.reviews.map(res => {
+                    {!!reviews.length && reviews.map(res => {
                         return(
                             <div key={res.id} className='review'>
                                 {`${res.id}) `}
